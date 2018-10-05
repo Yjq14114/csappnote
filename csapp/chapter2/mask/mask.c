@@ -15,6 +15,10 @@ int to_one(int x)
 {
     return x | 0xFF;
 }
+// x的最低有效位字节和y剩下的位组成
+int x_to_y(int x, int y) {
+    return (x & 0xFF) + (y & ~0xFF);
+}
 void main(int argc, char **argv[])
 {
     int a = 0x87654321;
@@ -26,4 +30,8 @@ void main(int argc, char **argv[])
     int o = to_one(a);
     printf("%x\n", f);
     printf("%x\n", o);
+    int x = 0x89ABCDEF;
+    int y = 0x76543210;
+    int z = x_to_y(x, y);
+    printf("%x\n", z);
 }

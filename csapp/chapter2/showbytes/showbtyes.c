@@ -80,6 +80,8 @@ void main(int argc, char **argv[])
 	printf("%d\n", mx);
 	show_short(x);
 	show_short(mx);
+	float a = 10.0;
+	show_float(a);
 	// int w = 0x000000c9;
 	// int a = fun1(w);
 	// int b = fun2(w);
