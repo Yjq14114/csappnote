@@ -11,6 +11,18 @@ void show_bytes(byte_pointer start, size_t len)
 	}
 	printf("\n");
 }
+void show_short(short x)
+{
+	show_bytes((byte_pointer)&x, sizeof(short));
+}
+void show_long(long x)
+{
+	show_bytes((byte_pointer)&x, sizeof(long));
+}
+void show_double(double x)
+{
+	show_bytes((byte_pointer)&x, sizeof(double));
+}
 void show_int(int x)
 {
 	show_bytes((byte_pointer)&x, sizeof(int));
@@ -53,23 +65,21 @@ void main(int argc, char **argv[])
 	// 打印x的字节表示，大小端法下表示各不相同
 	// int x = 12345;
 	// test_show_bytes(x);
-	char *s = "abcdef"; // c语言中的指针可以用来表示数组
-	char c[6] = {'a','b','c','d','e', 'f'};
-	show_bytes((byte_pointer)&c, 6);
-	// printf("%x\n", s[1]);
-	show_chars(s);
-	// show_bytes((byte_pointer) s, strlen(s));
+	// char *s = "abcdef"; // c语言中的指针可以用来表示数组
+	// char c[6] = {'a','b','c','d','e', 'f'};
+	// show_bytes((byte_pointer)&c, 6);
+	// show_chars(s);
 	// int val = 0x87654321;
 	// byte_pointer valp = (byte_pointer)&val;
 	// show_bytes(valp, 1);
 	// show_bytes(valp, 2);
 	// show_bytes(valp, 3);
-	// short x = 12345;
-	// short mx = -x;
-	// printf("%d\n", &x);
-	// printf("%d\n", &mx);
-	// show_bytes((byte_pointer) &x, sizeof(short));
-	// show_bytes((byte_pointer)&mx, sizeof(short));
+	short x = 12345;
+	short mx = -x;
+	printf("%d\n", x);
+	printf("%d\n", mx);
+	show_short(x);
+	show_short(mx);
 	// int w = 0x000000c9;
 	// int a = fun1(w);
 	// int b = fun2(w);
