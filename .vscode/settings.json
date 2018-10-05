@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "stdio.h": "c",
+        "inplace_swap.h": "c",
+        "char_int.h": "c",
+        "string.h": "c"
+    }
+}
