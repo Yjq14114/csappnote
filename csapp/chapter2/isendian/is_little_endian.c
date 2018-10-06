@@ -1,4 +1,7 @@
 #include <stdio.h>
+/**
+ * 判断是否为小端法机器
+ */
 int is_little_endian()
 {
     int x = 1;
