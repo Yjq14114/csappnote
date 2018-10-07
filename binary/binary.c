@@ -1,4 +1,7 @@
 #include <stdio.h>
+/**
+ * 十进制转二进制
+ */
 void to_binary(unsigned int n);
 void  main(int argc, char ** argv[]) 
 {
