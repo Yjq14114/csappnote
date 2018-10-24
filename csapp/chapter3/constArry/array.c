@@ -16,6 +16,7 @@ int fix_prod_ele(fix_matrix A, fix_matrix B, long i, long k)
     }
     return result;
  }
+ 
 void main(int argc, char **argv[])
 {
     fix_matrix A = {
