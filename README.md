@@ -49,3 +49,10 @@ csapp note
    s 下一个断点（进入子函数）
 
    c 跳过直到下一个断点处
+
+3. 调试内存堆栈信息
+
+   info args 查看当前函数参数值
+
+    - info locals 看当前函数栈上值
+    - info registers 查看寄存器值
