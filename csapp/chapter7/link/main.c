@@ -13,7 +13,7 @@ int main()
         printf("%d\n", buf[1]);
     }
     swap();
-    printf("%s\n", "after");
+    printf("%s\n", "after:emoji");
     for (int i = 0; i < 2; i++)
     {
         printf("%d\n", buf[0]);
