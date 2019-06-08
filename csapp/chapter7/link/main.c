@@ -4,8 +4,21 @@ void swap();
 
 int buf[2] = {1, 2};
 
-int mian()
+int main()
 {
+    printf("%s\n", "before");
+    for (int i = 0; i < 2; i++)
+    {
+        printf("%d\n", buf[0]);
+        printf("%d\n", buf[1]);
+    }
     swap();
+    printf("%s\n", "after");
+    for (int i = 0; i < 2; i++)
+    {
+        printf("%d\n", buf[0]);
+        printf("%d\n", buf[1]);
+    }
+
     return 0;
 }
