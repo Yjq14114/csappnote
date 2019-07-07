@@ -3,6 +3,7 @@
         "stdio.h": "c",
         "inplace_swap.h": "c",
         "char_int.h": "c",
-        "string.h": "c"
+        "string.h": "c",
+        "types.h": "c"
     }
 }
