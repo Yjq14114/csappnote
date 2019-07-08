@@ -30,3 +30,6 @@ w-if-continued
 
 ECHILD
 
+## 错误条件
+
+如果调用进程没有子进程，那么waitpid 返回-1，并且设置errno为ECHILD.如果waitpid函数被一个信号中断，那么它返回-1，并设置errno为EINTR
