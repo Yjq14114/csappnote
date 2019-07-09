@@ -33,3 +33,31 @@ ECHILD
 ## 错误条件
 
 如果调用进程没有子进程，那么waitpid 返回-1，并且设置errno为ECHILD.如果waitpid函数被一个信号中断，那么它返回-1，并设置errno为EINTR
+
+
+```c
+/**
+ * 因为第一个参数是-1, 所以对waitpid的调用会阻塞，直到任意一个子进程终止
+ * 在每个子进程终止时，对waitpid的调用会返回，返回值为该子进程的非零pid
+ */
+waitpid(-1, &status, 0)
+
+```
+
+## 让进程休眠
+
+```c
+#include <unistd.d>
+unsigned int sleep(unsigned int secs); 		
+																					// 返回: 还要休眠的秒数
+```
+
+
+
+```c
+#include <unistd.h>
+
+int pause(void);
+																					// 总是返回-1
+```
+

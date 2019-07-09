@@ -1,5 +1,4 @@
 #include "stdio.h"
-
 #include <sys/types.h>
 
 typedef int pid_t;
