@@ -2,7 +2,7 @@
 int main(int argc, char const *argv[])
 {
     int c;
-    while((c==getchar()) != EOF)
+    while((c=getchar()) != EOF)
     {
         if (c == ' ')
         {
@@ -17,4 +17,5 @@ int main(int argc, char const *argv[])
         }
         putchar(c);
     }
+    return 0;
 }
