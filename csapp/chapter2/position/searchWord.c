@@ -11,7 +11,7 @@ int main(int argc, char const *argv[])
 {
     char line[MAXLINE];
     int count = 0;
-    while (getTheline(line, MAXLINE) > 0)
+    while (getTheLine(line, MAXLINE) > 0)
     {
         /* code */
         if (stringdex(line, pattern) >= 0)
