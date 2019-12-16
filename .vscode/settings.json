@@ -4,6 +4,7 @@
         "inplace_swap.h": "c",
         "char_int.h": "c",
         "string.h": "c",
-        "types.h": "c"
+        "types.h": "c",
+        "csapp.h": "c"
     }
 }

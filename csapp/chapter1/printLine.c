@@ -21,11 +21,13 @@ int main(int argc, char const *argv[])
             copy(longest, line);
         }
     }
-
+    /**
+     * 大于0表示存在才打印
+     */
     if (max > 0)
     {
-        /* code */
         printf("%s", longest);
+        /* code */
     }
 
     return 0;
