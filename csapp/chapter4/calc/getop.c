@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <ctype.h>
 #include "calc.h"
 
 int getop(char s[])
@@ -15,7 +16,7 @@ int getop(char s[])
     if (isdigit(c))
     {
         /* code */
-        while (isgigit(s[++i] = c = getch()));
+        while (isdigit(s[++i] = c = getch()));
     }
     if (c == '.')
     {

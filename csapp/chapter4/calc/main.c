@@ -1,10 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "calc.h"
 
 #define MAXOP 100
 #define NUMBER '0'
 
-main()
+int main(int argc, char const *argv[])
 {
     int type;
     double op2;
@@ -25,6 +26,7 @@ main()
                 break;
             case '-':
                 op2 = pop();
+                push(pop() - op2);
                 break;
             case '/':
                 op2 = pop();
