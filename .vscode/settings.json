@@ -5,6 +5,7 @@
         "char_int.h": "c",
         "string.h": "c",
         "types.h": "c",
-        "csapp.h": "c"
+        "csapp.h": "c",
+        "calc.h": "c"
     }
 }
