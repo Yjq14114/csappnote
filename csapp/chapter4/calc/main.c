@@ -5,6 +5,11 @@
 #define MAXOP 100
 #define NUMBER '0'
 
+/**
+ * 逆波兰表示法
+ * 1 2 - 4 5 + *
+ * (1 - 2) * (4 + 5)
+ */
 int main(int argc, char const *argv[])
 {
     int type;
