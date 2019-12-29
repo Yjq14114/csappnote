@@ -16,7 +16,7 @@ int main(int argc, char const *argv[])
         writelines(lineptr, nlines);
         return 0;
     } else {
-        prinft("error: input too big to sort\n");
+        printf("error: input too big to sort\n");
         return 1;
     }
 }

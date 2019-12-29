@@ -30,7 +30,7 @@ void afree(char *p)
 /**
  * 将输入的字符放进数组s中，并返回 s的长度
  */
-int getline(char s[], int lim)
+int getTheLine(char s[], int lim)
 {
     int c, i;
     i = 0;
@@ -42,12 +42,12 @@ int getline(char s[], int lim)
     return i;
 }
 
-void strcpy(char *s, char *t)
+void strTheCpy(char *s, char *t)
 {
     int i = 0;
     while (*s++ = *t++);
 }
-int strcmp(char *s, char *t)
+int strcmpare(char *s, char *t)
 {
     for(; *s == *t; s++, t++)
     {
@@ -73,7 +73,7 @@ int readlines(char *lineptr[], int maxlines)
     int len, nlines;
     char *p, line[MAXLEN];
     nlines = 0;
-    while((len = getline(line, MAXLEN)) > 0)
+    while((len = getTheLine(line, MAXLEN)) > 0)
     {
         if (nlines >= maxlines || (p = alloc(len)) == NULL)
         {
@@ -81,7 +81,7 @@ int readlines(char *lineptr[], int maxlines)
             return -1;
         } else {
             line[len-1] = '\0';
-            strcpy(p, line);
+            strTheCpy(p, line);
             lineptr[nlines++] = p;
         }
     }
@@ -109,7 +109,7 @@ void qsort(char *v[], int left, int right)
     last = left;
     for (i = left + 1; i <= right; i++)
     {
-        if (strcmp(v[i], v[left]) < 0)
+        if (strcmpare(v[i], v[left]) < 0)
         {
             /* code */
             swap(v, ++last, i);
