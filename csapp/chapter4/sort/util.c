@@ -44,7 +44,6 @@ int getTheLine(char s[], int lim)
 
 void strTheCpy(char *s, char *t)
 {
-    int i = 0;
     while (*s++ = *t++);
 }
 int strcmpare(char *s, char *t)
@@ -105,6 +104,7 @@ void qsort(char *v[], int left, int right)
         /* code */
         return;
     }
+    void swap(char *v[], int i, int j);
     swap(v, left, (left - right)/2);
     last = left;
     for (i = left + 1; i <= right; i++)
