@@ -3,11 +3,17 @@
 
 #include "../calc/calc.h"
 
+int getfloat(int *pn)
+{
 
+    return 0.0;
+}
 int getint(int *pn)
 {
 
     int c, sign;
+    /* while 循环输入字符是否是空字符，如果继续是*/
+
     while (isspace(c = getch()));
     if (!isdigit(c) && c != EOF && c != '+' && c != '-')
     {
@@ -30,7 +36,6 @@ int getint(int *pn)
     {
         /* code */
         ungetch(c);
-    }
-    return c;
+    }    return c;
 }
 
