@@ -8,6 +8,7 @@
         "csapp.h": "c",
         "calc.h": "c",
         "stdlib.h": "c",
-        "sort.h": "c"
+        "sort.h": "c",
+        "head.h": "c"
     }
 }
