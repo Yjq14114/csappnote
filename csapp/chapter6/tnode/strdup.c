@@ -1,7 +1,9 @@
 #include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
 #include "head.h"
 
-char *strdup(char *s)
+char *strdupme(char *s)
 {
     char *p;
     p = (char *)malloc(strlen(s) + 1);

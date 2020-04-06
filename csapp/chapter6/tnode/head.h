@@ -9,7 +9,7 @@ struct tnode
 int getch(void);
 void ungetch(int c);
 struct tnode *talloc(void);
-char *strdup(char *s);
+char *strdupme(char *s);
 void treeprint(struct tnode *p);
 struct tnode *addtree(struct tnode *p, char *w);
 int getword(char *word, int lim);

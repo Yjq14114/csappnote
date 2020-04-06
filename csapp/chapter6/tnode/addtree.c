@@ -10,7 +10,7 @@ struct tnode *addtree(struct tnode *p, char *w)
     {
         /* code */
         p = talloc();
-        p->word = strdup(w);
+        p->word = strdupme(w);
         p->count = 1;
         p->left = p->right = NULL;
     }
